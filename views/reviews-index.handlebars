@@ -1,0 +1,14 @@
+<h1>Reviews</h1>
+
+<a href="/reviews/new">New Review</a>
+
+<div class="row">
+    {{#each reviews}}
+    <div class="col-sm-3">
+        <h2><a href="/reviews/{{this._id}}">{{this.title}}</a></h2>
+        <h3>{{this.movieTitle}}</h3>
+        <p>Star Rating: {{this.rating}}</p>
+        <p>{{this.description}}</p>
+    </div>
+    {{/each}}
+</div>
